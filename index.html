@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FORM</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+
+
+        <form class="form" action="#" enctype="multipart/form-data" method="post">
+            <div class="form--row">
+                <label class="form--row_label" for="name">
+                    <p>Имя</p>
+                    <input type="text" placeholder="Введите имя" name="firstname" id="firstname" class="plaseholder" required>
+                </label>
+                <label class="form--row_label" for="name">
+                    <p>Фамилия</p>
+                    <input type="text" placeholder="Введите фамилию" name="lastname" id="lastname" class="plaseholder" required>
+                </label>
+            </div>
+
+            <label class="form--label"><p>Сообщение </p>
+                    <textarea placeholder="Введите текст"  class="plaseholder"></textarea></label>
+            <label class="form--label">
+                    <p>Причина вопроса </p>
+                    <select>
+                        <option value="" hidden disabled selected> Не выбрано</option>
+                        <option> Просто спросить</option>
+                        <option> Меня очень сильно интересует</option>
+                        <option>Я крайне любопытен</option>
+                        <option>Не сильно то и хотелось</option>
+                        <option>Все знают, а я нет</option>            
+        
+                    </select>
+                </label>
+
+            <div class="form--button">
+
+                <button class="button" type="submit">Отправить</button>
+
+            </div>
+    </div>
+    </form>
+    </div>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/send.js"></script>
+</body>
+
+</html>
